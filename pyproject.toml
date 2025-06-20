@@ -1,0 +1,49 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "make-a-gif"
+version = "0.0.0"
+description = "Make gifs in python."
+readme = "README.md"
+authors = [{ name = "John Gardner", email = "gardner.john97+dphil@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["gifs", "plots", "images", "animation"]
+dependencies = [
+    "ipython",
+    "matplotlib",
+    "imageio",
+]
+requires-python = ">=3.11"
+
+[project.urls]
+Homepage = "https://github.com/jla-gardner/make-a-gif"
+
+[dependency-groups]
+dev = [
+    "notebook>=6.5.7",
+    "numpy>=1.21.6",
+    "perlin-noise>=1.13",
+    "ruff>=0.12.0",
+    "torch>=1.13.1",
+]
+
+[tool.setuptools]
+py-modules = ["make_a_gif"]
+
+[tool.ruff]
+line-length = 79
+indent-width = 4
+target-version = "py311"
+extend-include = ["*.ipynb", "*.pyi", "*.toml"]
+
+[tool.ruff.lint]
+select = ["E", "F", "UP", "B", "SIM", "I"]
+ignore = ["SIM300", "E402", "E703", "F722", "UP037", "F821", "B018", "E741"]
+fixable = ["ALL"]
