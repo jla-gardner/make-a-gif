@@ -10,14 +10,11 @@ import matplotlib.pyplot as plt
 from IPython.display import HTML
 from matplotlib.figure import Figure
 
-__version__ = "0.0.0"
+__version__ = "0.1.0"
 __all__ = ["gif"]
 
 __DEFAULT_CSS = {"width": "360px", "height": "auto"}
-_DEFAULT_SAVEFIG_KWARGS = {
-    "bbox_inches": "tight",
-    "transparent": True,
-}
+_DEFAULT_SAVEFIG_KWARGS = {"bbox_inches": "tight"}
 
 Frame = TypeVar("Frame")
 

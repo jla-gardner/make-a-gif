@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "make-a-gif"
-version = "0.0.0"
+version = "0.1.0"
 description = "Make gifs in python."
 readme = "README.md"
 authors = [{ name = "John Gardner", email = "gardner.john97+dphil@gmail.com" }]
@@ -16,9 +16,9 @@ classifiers = [
 ]
 keywords = ["gifs", "plots", "images", "animation"]
 dependencies = [
-    "ipython",
-    "matplotlib",
-    "imageio",
+    "ipython>=9.0",
+    "matplotlib>=3.10.0",
+    "imageio>=2.37",
 ]
 requires-python = ">=3.11"
 
@@ -28,10 +28,11 @@ Homepage = "https://github.com/jla-gardner/make-a-gif"
 [dependency-groups]
 dev = [
     "notebook>=6.5.7",
-    "numpy>=1.21.6",
+    "numpy>=2.0",
     "perlin-noise>=1.13",
     "ruff>=0.12.0",
-    "torch>=1.13.1",
+    "scikit-learn>=1.7.0",
+    "torch>=2.0",
 ]
 
 [tool.setuptools]
