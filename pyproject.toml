@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "make-a-gif"
-version = "0.1.0"
+version = "0.2.0"
 description = "Make gifs in python."
 readme = "README.md"
 authors = [{ name = "John Gardner", email = "gardner.john97+dphil@gmail.com" }]
@@ -18,7 +18,7 @@ keywords = ["gifs", "plots", "images", "animation"]
 dependencies = [
     "ipython>=9.0",
     "matplotlib>=3.10.0",
-    "imageio>=2.37",
+    "Pillow>=11.3.0",
 ]
 requires-python = ">=3.11"
 
